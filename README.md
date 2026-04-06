@@ -1,4 +1,4 @@
-# MSE 433 — Inventory Replenishment Under Uncertain Demand
+# MSE 433: Inventory Replenishment Under Uncertain Demand
 
 **Harpreet Ghotra | 20951321**
 
