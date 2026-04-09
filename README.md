@@ -59,19 +59,6 @@ The notebook runs a sequential 9-section workflow:
 
 ---
 
-## Key Results
-
-| Finding | Value |
-|---|---|
-| Average Safety Stock | 21.5 units across 15 products |
-| Average Reorder Point | 40.0 units |
-| Average EOQ | 9.4 units/order |
-| Full SS annual cost saving vs Baseline (incl. stockout penalty) | **~$27,400/product/year** |
-| Backtest service level improvement (Full SS vs Baseline, 2020) | **+10.4 percentage points** |
-| Efficient service level zone | 90–97% |
-
----
-
 ## How to Run
 
 ### 1. Clone the repository
@@ -125,18 +112,6 @@ All Excel output files are saved to the `outputs/` folder automatically when the
 | Ordering cost | $50 per order | Fixed assumption (no data available) |
 | Service level target | 95% (default) | Standard inventory management benchmark |
 | Stockout penalty | Gross margin per unit (Unit Price − Unit Cost) | Minimum economic cost of a stockout |
-
----
-
-## Policy Segmentation
-
-Products are assigned to policies based on demand variability (CV = Std / Mean):
-
-| Segment | CV Range | Policy | Products |
-|---|---|---|---|
-| Low variability | CV < 0.45 | Simple SS – 95% | P-23, P-8, P-40 |
-| Medium variability | 0.45 ≤ CV < 0.55 | Full SS – 95% | P-37, P-16, P-22, P-4, P-27, P-46, P-12, P-29, P-41, P-38 |
-| High variability | CV ≥ 0.55 | Full SS – 97% | P-11, P-2 |
 
 ---
 
